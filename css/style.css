@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: white;
+}
+
+header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+header img {
+  width: 200px;
+}
+
+footer {
+  background-color: rgb(6, 15, 7);
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.fila1 {
+  background: red;
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: auto auto;
+}
+.fila1 img {
+  grid-column: 1;
+  grid-row: 1/span 2;
+}
+.fila1 p {
+  text-align: center;
+}
+
+.fila2 {
+  background: blue;
+  display: grid;
+  grid-template-columns: auto 125px 125px;
+  grid-template-rows: auto auto;
+}
+.fila2 p {
+  text-align: center;
+}
+.fila2 .p1_f2 {
+  grid-column: 1;
+}
+.fila2 .p2_f2 {
+  grid-row: 2;
+}
+
+.fila3 {
+  background: green;
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: auto auto;
+}
+.fila3 img {
+  grid-column: 1;
+  grid-row: 1/span 2;
+}
+.fila3 p {
+  text-align: center;
+}
+
+.fila4 {
+  background: violet;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 250px;
+  grid-template-rows: auto;
+}
+.fila4 p {
+  text-align: center;
+}
+
+.fila5 {
+  background: yellow;
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: auto;
+}
+.fila5 img {
+  grid-column: 1;
+  grid-row: 1/span 2;
+}
+.fila5 p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
