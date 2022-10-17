@@ -31,9 +31,6 @@ header {
   padding-bottom: 2px;
   align-items: center;
 }
-header img {
-  width: 200px;
-}
 
 footer {
   background-color: rgb(6, 15, 7);
@@ -42,7 +39,7 @@ footer {
 
 img {
   width: 100%;
-  height: auto;
+  height: 50vh;
 }
 
 .encabezado {
@@ -53,7 +50,6 @@ img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  position: relative;
   overflow: hidden;
 }
 
@@ -72,14 +68,25 @@ img {
   margin-bottom: 20px;
 }
 .texto_encabezado a {
+  color: #000000;
   padding: 12px 15px;
-  background: #a18cd1;
+  background: #FFA1F2;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px 0px black;
+}
+.texto_encabezado a:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 10px 20px 5px black;
+}
+
+section {
+  padding: 80px 0;
 }
 
 .fila1 {
   display: grid;
-  grid-template-columns: 250px auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: 400px auto;
+  grid-template-rows: 20vh 20vh;
 }
 .fila1 img {
   grid-column: 1;
@@ -92,7 +99,7 @@ img {
 .fila2 {
   background: blue;
   display: grid;
-  grid-template-columns: auto 125px 125px;
+  grid-template-columns: auto 200px 200px;
   grid-template-rows: auto auto;
 }
 .fila2 p {
@@ -108,7 +115,7 @@ img {
 .fila3 {
   background: green;
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 400px auto;
   grid-template-rows: auto auto;
 }
 .fila3 p {
@@ -130,7 +137,7 @@ img {
   background: violet;
   display: grid;
   align-items: center;
-  grid-template-columns: auto 250px 250px;
+  grid-template-columns: auto 400px 400px;
   grid-template-rows: auto;
 }
 .fila4 p {
@@ -140,7 +147,7 @@ img {
 .fila5 {
   background: yellow;
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 400px auto;
   grid-template-rows: auto;
 }
 .fila5 img {
