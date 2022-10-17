@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -69,12 +70,19 @@ img {
   grid-template-columns: 250px auto;
   grid-template-rows: auto auto;
 }
-.fila3 img {
-  grid-column: 1;
-  grid-row: 1/span 2;
-}
 .fila3 p {
   text-align: center;
+}
+.fila3 img {
+  grid-column: 1;
+}
+.fila3 .p1_f3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.fila3 .p2_f3 {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .fila4 {
