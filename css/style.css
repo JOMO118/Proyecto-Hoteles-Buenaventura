@@ -81,11 +81,9 @@ img {
   background: violet;
   display: grid;
   align-items: center;
-  grid-template-columns: auto 250px;
+  grid-template-columns: auto 250px 250px;
   grid-template-rows: auto;
 }
-
-
 .fila4 p {
   text-align: center;
 }
