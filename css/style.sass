@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap')
 
 $size_img: 400px
+$size_img_mini: 150px
 $btn_descarga_width: 250px
 $btn_descarga_height: 80px
 
@@ -199,20 +200,20 @@ footer
         padding: 30px 0
 
     .fila1
-        grid-template-columns: 150px auto 
+        grid-template-columns: $size_img_mini auto 
 
     .fila2
-        grid-template-columns: auto 75px 75px
+        grid-template-columns: auto $size_img_mini/2 $size_img_mini/2
     
     .fila3
-        grid-template-columns: 150px auto
+        grid-template-columns: $size_img_mini  auto
     
     .fila4
-        grid-template-columns: auto 75px 75px
+        grid-template-columns: auto $size_img_mini/2 $size_img_mini/2
     
     .fila5
-        grid-template-columns: 150px auto
+        grid-template-columns: $size_img_mini  auto
 
     .fila6
-        grid-template-columns: auto 150px
+        grid-template-columns: auto $size_img_mini 
         
