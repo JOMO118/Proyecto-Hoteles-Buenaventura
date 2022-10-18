@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap')
 
 $size_img: 400px
+$btn_descarga_width: 250px
+$btn_descarga_height: 80px
+
 
 *
     margin:0
@@ -21,12 +24,6 @@ header
     padding-top: 2px
     padding-bottom: 2px
     align-items: center
-
-
-footer
-    background-color: rgb(6, 15, 7)
-    color: white
-
 
 img
     width: 100%
@@ -136,3 +133,49 @@ section
     .p2_f6
         grid-column: 1
         grid-row: 2
+
+#descargar
+    .download-btn
+        margin: 0 auto
+        width: $btn_descarga_width
+        height: $btn_descarga_height
+        text-align: center
+        border-radius:10px
+        box-sizing: border-box
+        overflow: hidden
+        div
+            width:100%
+            height:100%
+            font-size:15px
+            font-weight:600
+            text-transform: uppercase
+            line-height:80px
+        .front
+            background: violet
+            color: black
+        .back
+            background:#eee
+            button
+                text-transform: uppercase
+                font-size:15px
+                font-weight:600
+                width:$btn_descarga_width
+                height:$btn_descarga_height
+                text-align: center
+                border-radius:10px
+                background: #eee    
+                border: none
+                &:active
+                    background: blue
+        .front
+            transition: all 3000ms
+        &:hover
+            .front
+                margin-top:-$btn_descarga_height
+        
+
+
+    footer
+        background-color: rgb(6, 15, 7)
+        color: white
+
