@@ -108,21 +108,22 @@ section {
 
 .fila3 {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 700px auto;
   grid-template-rows: auto auto;
+}
+.fila3 img {
+  grid-column: 1;
+  grid-column-grid-row: 1/span 2;
 }
 .fila3 p {
   text-align: center;
 }
-.fila3 img {
-  grid-column: 1;
-}
 .fila3 .p1_f3 {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1;
 }
 .fila3 .p2_f3 {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 2;
 }
 
@@ -151,7 +152,7 @@ section {
 
 .fila6 {
   display: grid;
-  grid-template-columns: auto 400px;
+  grid-template-columns: auto 700px;
   grid-template-rows: auto auto;
 }
 .fila6 p {
