@@ -11,28 +11,26 @@ $btn_descarga_height: 80px
     padding: 0
   
 html,body
-    height: 100%
+    height: 100vh
 
 html
     scroll-behavior: smooth
 
 body
-    background: white
+    background: rgba(255, 255, 255, 0.61)
     font-family: 'Raleway', sans-serif
 
 header
     padding-top: 2px
     padding-bottom: 2px
     align-items: center
-
 img
     width: 100%
     height: 50vh
 
 .encabezado
     background-image: linear-gradient(-225deg, rgba(240, 253, 245, 0.7) 0%, rgba(255, 160, 180, 0.7) 100%), url("../imagen/logo.png")
-    width: auto
-    height: 100%
+    height: 100vh
     background-repeat: no-repeat
     background-size: cover
     background-position: center
@@ -67,7 +65,7 @@ section
 .fila1
     display: grid
     grid-template-columns: $size_img auto
-    grid-template-rows: 20vh 20vh
+    grid-template-rows: auto auto
     img
         grid-column: 1
         grid-row: 1/ span 2
@@ -75,7 +73,7 @@ section
         text-align: center
 
 .fila2
-   
+    flex-wrap: wrap
     display: grid
     grid-template-columns: auto $size_img/2 $size_img/2
     grid-template-rows: auto auto 
@@ -105,7 +103,7 @@ section
 .fila4
     display: grid
     align-items: center
-    grid-template-columns: auto $size_img $size_img 
+    grid-template-columns: auto calc($size_img - 100px) calc($size_img - 100px) 
     grid-template-rows: auto
     p
         text-align: center
@@ -173,9 +171,45 @@ section
             .front
                 margin-top:-$btn_descarga_height
         
+footer
+    bottom: 0
+    background-color: rgb(6, 15, 7)
+    color: white
 
+@media screen and (max-width: 500px)
+    .encabezado
+        background-image: linear-gradient(-225deg, rgba(240, 253, 245, 0.7) 0%, rgba(255, 160, 180, 0.7) 100%), url("../imagen/logo_mini.png")
+    
+    .texto_encabezado
+        h1
+            padding-bottom: 10px
+        p
+            font-size: 15px
+    
+    main
+        font-size: 10px
+        img
+            max-width: 150px
+            max-height: 150px
+        
+    section
+        padding: 30px 0
 
-    footer
-        background-color: rgb(6, 15, 7)
-        color: white
+    .fila1
+        grid-template-columns: 150px auto 
 
+    .fila2
+        grid-template-columns: auto 75px 75px
+    
+    .fila3
+        grid-template-columns: 150px auto
+    
+    .fila4
+        grid-template-columns: auto 75px 75px
+    
+    .fila5
+        grid-template-columns: 150px auto
+
+    .fila6
+        grid-template-columns: auto 150px
+        
