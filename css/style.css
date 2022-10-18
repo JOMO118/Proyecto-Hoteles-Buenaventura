@@ -97,10 +97,9 @@ section {
 }
 
 .fila2 {
- 
   display: grid;
   grid-template-columns: auto 200px 200px;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 200 px auto 200px;
 }
 .fila2 p {
   text-align: center;
@@ -113,7 +112,6 @@ section {
 }
 
 .fila3 {
-
   display: grid;
   grid-template-columns: 400px auto;
   grid-template-rows: auto auto;
@@ -134,7 +132,6 @@ section {
 }
 
 .fila4 {
- 
   display: grid;
   align-items: center;
   grid-template-columns: auto 400px 400px;
@@ -145,7 +142,6 @@ section {
 }
 
 .fila5 {
-
   display: grid;
   grid-template-columns: 400px auto;
   grid-template-rows: auto;
@@ -158,4 +154,19 @@ section {
   text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+.fila6 {
+  display: grid;
+  grid-template-columns: auto 400px;
+  grid-template-rows: auto auto;
+}
+.fila6 p {
+  text-align: center;
+}
+.fila6 .p1_f6 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.fila6 .p2_f6 {
+  grid-column: 1;
+  grid-row: 2;
+}/*# sourceMappingURL=style.css.map */
